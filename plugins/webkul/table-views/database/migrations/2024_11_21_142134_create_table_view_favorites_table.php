@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('table_view_favorites', function (Blueprint $table) {
             $table->id();
             $table->boolean('is_favorite')->default(1);
-            $table->string('view_type');
-            $table->string('view_key');
-            $table->string('filterable_type');
+            $table->string('view_type', 80);
+            $table->string('view_key', 80);
+            $table->string('filterable_type', 80);
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
 

@@ -31,7 +31,9 @@ class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
-        set_time_limit(300);
+        if (! app()->runningInConsole()) {
+            set_time_limit(300);
+        }
 
         return $panel
             ->default()
@@ -103,6 +105,9 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()
                     ->label(fn (): string => __('admin.navigation.barcode'))
                     ->icon('icon-barcode'),
+                NavigationGroup::make()
+                    ->label(fn (): string => 'Customer Support')
+                    ->icon('heroicon-o-lifebuoy'),
                 NavigationGroup::make()
                     ->label(__('admin.navigation.plugin'))
                     ->label(fn (): string => __('admin.navigation.plugin'))

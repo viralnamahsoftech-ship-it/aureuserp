@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('chatter_followers', function (Blueprint $table) {
             $table->id();
-            $table->morphs('followable');
+            $table->string('followable_type', 125);
+            $table->unsignedBigInteger('followable_id');
+            $table->index(['followable_type', 'followable_id']);
             $table->unsignedBigInteger('partner_id')->nullable();
             $table->timestamp('followed_at')->nullable();
             $table->timestamps();
