@@ -10,6 +10,14 @@ php artisan customer-support:install
 
 This document contains the full generated source for the AureusERP customer support plugin.
 
+## Access and Registration Notes
+
+- Provider is registered in `bootstrap/providers.php` as `Webkul\CustomerSupport\CustomerSupportServiceProvider::class`.
+- Install command: `php artisan customer-support:install`.
+- Admin resource URL: `/admin/customer-support/tickets`.
+- Navigation group: `Customer Support`.
+- The plugin does not create controllers, routes, or API endpoints. Filament discovers `TicketResource` after the plugin is installed.
+
 ## plugins/webkul/customer-support/composer.json
 
 `$language
