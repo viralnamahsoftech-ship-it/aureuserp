@@ -8,6 +8,8 @@ use Webkul\Accounting\AccountingServiceProvider;
 use Webkul\Analytic\AnalyticServiceProvider;
 use Webkul\Barcode\BarcodeServiceProvider;
 use Webkul\Blog\BlogServiceProvider;
+use Webkul\BusinessMasters\BusinessMastersServiceProvider;
+use Webkul\BusinessParty\BusinessPartyServiceProvider;
 use Webkul\Chatter\ChatterServiceProvider;
 use Webkul\Contact\ContactServiceProvider;
 use Webkul\CustomerSupport\CustomerSupportServiceProvider;
@@ -43,6 +45,8 @@ return [
     AnalyticServiceProvider::class,
     BarcodeServiceProvider::class,
     BlogServiceProvider::class,
+    BusinessMastersServiceProvider::class,
+    BusinessPartyServiceProvider::class,
     ChatterServiceProvider::class,
     ContactServiceProvider::class,
     CustomerSupportServiceProvider::class,

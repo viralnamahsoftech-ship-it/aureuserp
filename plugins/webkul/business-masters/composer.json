@@ -1,0 +1,30 @@
+{
+    "name": "webkul/business-masters",
+    "description": "BusinessMasters plugin",
+    "authors": [
+        {
+            "name": "Aureus ERP",
+            "email": "support@aureuserp.in"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\BusinessMasters\\BusinessMastersServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\BusinessMasters\\": "src/",
+            "Webkul\\BusinessMasters\\Database\\Factories\\": "database/factories/",
+            "Webkul\\BusinessMasters\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webkul\\BusinessMasters\\Tests\\": "tests/"
+        }
+    }
+}

@@ -64,6 +64,9 @@ class AdminPanelProvider extends PanelProvider
                     ->label(fn (): string => __('admin.navigation.dashboard'))
                     ->icon('icon-dashboard'),
                 NavigationGroup::make()
+                    ->label(fn (): string => 'Masters')
+                    ->icon('heroicon-o-rectangle-stack'),
+                NavigationGroup::make()
                     ->label(fn (): string => __('admin.navigation.contact'))
                     ->icon('icon-contacts'),
                 NavigationGroup::make()

@@ -1,0 +1,30 @@
+{
+    "name": "webkul/business-party",
+    "description": "BusinessParty plugin",
+    "authors": [
+        {
+            "name": "Aureus ERP",
+            "email": "support@aureuserp.in"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\BusinessParty\\BusinessPartyServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\BusinessParty\\": "src/",
+            "Webkul\\BusinessParty\\Database\\Factories\\": "database/factories/",
+            "Webkul\\BusinessParty\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webkul\\BusinessParty\\Tests\\": "tests/"
+        }
+    }
+}

@@ -46,6 +46,12 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "Webkul\\BusinessMasters\\": "plugins/webkul/business-masters/src/",
+            "Webkul\\BusinessMasters\\Database\\Factories\\": "plugins/webkul/business-masters/database/factories/",
+            "Webkul\\BusinessMasters\\Database\\Seeders\\": "plugins/webkul/business-masters/database/seeders/",
+            "Webkul\\BusinessParty\\": "plugins/webkul/business-party/src/",
+            "Webkul\\BusinessParty\\Database\\Factories\\": "plugins/webkul/business-party/database/factories/",
+            "Webkul\\BusinessParty\\Database\\Seeders\\": "plugins/webkul/business-party/database/seeders/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
